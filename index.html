@@ -1,36 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
+<html>
+    <head>
+        <style>
+            .image-container {
+            display: flex; /* Use flexbox to create a horizontal layout */
+            }
 
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden; /* Prevent horizontal scrollbar */
-    }
+            .image-container img {
+            margin-right: 10px; /* Add some margin between the images */
+            }
 
-    iframe {
-      display: block; 
-      width: 100vw;  /* 100% of viewport width */
-      height: 100vh; /* 100% of viewport height */
-      border: none; 
-      overflow-y: auto; 
-      overflow-x: hidden;
-    }
-  </style>
-  <title>Senior Design Documents</title>
-</head>
-
+            .image-text {
+            text-align: center; /* Center the text under each image */
+            }
+            .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #e9e9e9;
+            }
+        </style>
+        <title>Senior Design Documents</title>
+    </head>
 <body>
-  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQFDtgnVBwtvVSQgSuagRZ0amEqzCnPbRZABNaNgjCWNYEY8tcRNMfqgGHaYwFqILGufzmWFjj_PZp6/pub?embedded=true" 
-    frameborder="0" 
-    scrolling="auto">
-  </iframe>
-</body>
 
+
+<div class="container">
+    <header class="header">
+        <h1>Voice Controlled Wireless Shifter for Handcycles and Trikes</h1>
+        
+</header>
+</div>
+<div class = "image-container">
+    <div class = "image-text">
+        <a href="p1.html">    
+            <img frameborder="0" alt="sprint4" src="fi.png" width="100" height="100">
+            <p class ="image-text-pg">Sprint 4</p>
+        </a>
+        </div>
+        <div class = "image-text">
+            <a href="p2.html">    
+                <img frameborder="0" alt="sprint3" src="fi.png" width="100" height="100">
+                <p class ="image-text-pg">Sprint 3</p>
+            </a>
+        </div>
+        <div class = "image-text">
+            <a href="p3.html">    
+                <img frameborder="0" alt="sprint2" src="fi.png" width="100" height="100">
+                <p class ="image-text-pg">Sprint 2</p>
+            </a>
+        </div>
+        <div class = "image-text">
+            <a href="p4.html">    
+                <img frameborder="0" alt="sprint2" src="fi.png" width="100" height="100">
+                <p class ="image-text-pg">Sprint 1</p>
+            </a>
+            </div>
+</div>
+ 
+</div>    
+
+
+</body>
 </html>
