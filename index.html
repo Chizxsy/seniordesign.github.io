@@ -14,11 +14,23 @@
             text-align: center; /* Center the text under each image */
             }
             .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            background-color: #e9e9e9;
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                margin: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px; /* Adjust the height as needed */
+            }
+            .header2{
+                text-align: center;
+                justify-content: center;
+            }
+            .text{
+                text-align: center;
+                margin-left: 100px;
+                margin-right: 100px;
             }
         </style>
         <title>Senior Design Documents</title>
@@ -60,6 +72,36 @@
 </div>
  
 </div>    
+
+<div class ="container">
+    <div header = "header2">
+        <h2> 
+            Problem Statement 
+        </h2>
+    </div>
+</div>
+
+<p class = "text">Adaptive cycling provides freedom to individuals facing a wide variety of physical disabilities. Not only does it provide a means to stay active but it is also a source of transportation for those who have lost their ability to drive. Adaptive Adventures, a partner on this project, assists with outdoor sports opportunities to improve quality of life for children, adults and veterans with physical disabilities. With an overarching goal of developing a voice controlled wireless shifter for veterans facing a variety of physical disabilities but love to ride their bicycles, our team plans to use machine learning coupled with other audio processing techniques to shift the bike up and down on command. 
+</p>
+<p class = "text">There are many different styles of adaptive bicycles such as upright handcycles, recumbent handcycles, recumbent trikes, tandem trikes and more. Many adaptations to create a better user experience and reduce barriers exist but when an individual has weakness/numbness in their hand or is missing digits, shifting and braking become a challenge. 
+</p>
+<p class = "text">Developing a voice control system to run locally on a processor for freedom of exploration without being tethered to a network poses some challenges. While voice recognition is a complex problem, the ability to have machine learning recognize simple shift commands is seen as feasible for implementation as an embedded system. When it comes to implementing voice control systems using machine learning models, the memory space, specifically SRAM (Static Random-Access Memory), is a critical consideration. Machine learning models consist of layers of interconnected nodes, known as neurons, which hold weights and bias learned during the training process. Through a process called inference, the weights and biases are used to make predictions on live audio data being fed through an ADC. Furthermore, these weights and biases take up very little memory.
+</p>
+<p class = "text">Processing the audio data to remove noise is a concern throughout the process of prototyping and research. Ideally, having a minimally invasive design is best, although there is the option of the throat microphone, which can help mitigate wind noise.
+</p>
+
+<p class = "text">Another challenge relates to the power budget. The veterans on this project go on long rides. Anywhere from a quick warm up to a 6 hour long ride, with some even going bikepacking. It is not within the scope of this project to develop for multi bikepacking trips, although our goal of at least 6 hours of battery is certainly feasible through the low power budget of the neural network and bluetooth low energy communication. 
+</p>
+<p class = "text">Wireless communication will play a part in this no matter what technology system is used. Bluetooth Low Energy and ANT+ are commonly used wireless protocols specifically designed for low-power, low-cost, and low-data-rate applications. Perfect for implementation on low power consumption, high efficiency devices. 
+</p>
+<p class = "text">The aim of this project is not to build a shifter itself as many other companies have done this in the past, but to implement a voice activation capability integrated control implemented into an existing system (whether that be third party system such as one from SRAM, Archer Components or a cable puller of our own design).
+</p>
+<p class = "text">Rides with Adaptive Adventure and veterans don’t stop due to rain and snow, the enclosure for the electronics will have to be weather resistant. This poses some challenges, mainly, that heat needs a way to leave the sealed housing. This will have to be tested in both wet weather conditions and in higher temperature climates to ensure that there is no heat related failure.
+</p>
+<p class = "text">Past implementations of these general ideas have been implemented by our peers, featuring designs with SRAM AXS wireless shifting and Grove voice recognition boards. The Grove boards use a SoC built on an ARM Cortex-M platform and can recognize 22 keyworks, including up and down. 
+</p>
+<p class = "text">We will be closely working with our BAE Systems mentors and Adaptive Adventures for this project. Both companies possess extensive prior experience collaborating with veterans, particularly in the context of this specific project, indicating a wealth of expertise. Furthermore, Adaptive Adventures specializes in assisting veterans facing challenges such as hand weaknesses and missing appendages. This experience contributes significantly to the design process, allowing our team to design for a wide variety of needs. We will also be in close contact with veterans on this project, as ultimately we are designing for them and their needs.  
+</p>
 
 
 </body>
