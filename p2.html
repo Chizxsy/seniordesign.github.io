@@ -1,36 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
-
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden; /* Prevent horizontal scrollbar */
-    }
-
-    iframe {
-      display: block; 
-      width: 100vw;  /* 100% of viewport width */
-      height: 100vh; /* 100% of viewport height */
-      border: none; 
-      overflow-y: auto; 
-      overflow-x: hidden;
-    }
-  </style>
-  <title>Senior Design Documents</title>
-</head>
-
+<html>
 <body>
-  <iframe src="https://docs.google.com/document/d/e/2PACX-1vQFDtgnVBwtvVSQgSuagRZ0amEqzCnPbRZABNaNgjCWNYEY8tcRNMfqgGHaYwFqILGufzmWFjj_PZp6/pub?embedded=true" 
-    frameborder="0" 
-    scrolling="auto">
-  </iframe>
-</body>
+    <head>
+        <style>
+            .image-container {
+            display: flex; /* Use flexbox to create a horizontal layout */
+            }
 
+            .image-container img {
+            margin-right: 10px; /* Add some margin between the images */
+            }
+
+            .image-text {
+            text-align: center; /* Center the text under each image */
+            }
+            .header {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                margin: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px; 
+            }
+        </style>
+        <title>Senior Design Documents</title>
+    </head>
+
+    <div class="container">
+        <header class="header">
+            <h1>Sprint 1</h1>
+            
+    </header>
+
+<div class = "image-container">
+    <div class = "image-text">
+        <a href="contract.html">    
+            <img frameborder="0" alt="sprint4" src="di.png" width="100" height="100">
+            <p class ="image-text-pg">Project Deliverables Contract</p>
+        </a>
+        </div>
+
+
+</div>
+ 
+</div>    
+
+
+</body>
 </html>
